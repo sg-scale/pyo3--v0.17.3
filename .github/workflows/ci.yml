@@ -419,7 +419,7 @@ jobs:
         with:
           node-version: 14
       - run: pip install nox
-      - uses: actions/cache@v3
+      - uses: actions/cache@v6
         id: cache
         with:
           path: |
