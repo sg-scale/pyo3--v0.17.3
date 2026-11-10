@@ -11,7 +11,7 @@ jobs:
     if: ${{ !contains(github.event.pull_request.labels.*.name, 'CI-skip-changelog') && !startsWith(github.event.pull_request.title, 'release:') }}
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v9
         id: check
         with:
           script: |
